@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/coffee" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textColor="#212121"
+        android:padding="16dp"
+        android:textSize="15sp"
+        android:id="@+id/quntity"
+
+         />
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="+"
+        android:onClick="increment"
+        android:layout_below="@+id/quntity"
+        android:id="@+id/plus"
+        />
+
+    <TextView
+        android:id="@+id/textview_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quntity"
+        android:layout_marginStart="72dp"
+        android:padding="15dp"
+        android:text="0"
+        android:textColor="#212121"
+        android:layout_marginLeft="72dp" />
+"
+        />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/quntity"
+
+        android:layout_marginStart="121dp"
+        android:onClick="decrement"
+        android:text="-"
+        android:layout_marginLeft="121dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textview_price"
+
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-165dp"
+        android:padding="15dp"
+        android:text="Price"
+        android:textColor="#212121"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textview_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="165dp"
+        android:padding="15dp"
+        android:text="$0"
+        android:textColor="#212121" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+        android:onClick="submitorder"
+        android:text="order"
+        android:layout_alignParentLeft="true" />
+</RelativeLayout>
